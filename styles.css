@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header.banner {
+  background: url("images/banner.png") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: start;
+  position: relative;
+}
+
+header .overlay {
+  background: rgba(0, 0, 0, 0);
+  padding: 5rem;
+  width: 90vh;
+}
+
+header .logo {
+ background: url("images/logo.png") center/cover no-repeat;
+    width: 16vh;
+    height: 16vh;
+    opacity: 1;
+    padding: 2px;
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+header .overlay h1 {
+ font-size: 4em;   
+ padding-left: 0.2em;
+}
+
+header .overlay p {
+  font-size: 1.5em;
+  padding-left: 0.6em;
+}
+
+.buttons button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background: #0066cc;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.about, .products, .certification, .contact {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about {
+  color: rgb(27 50 87);
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about h2{
+  font-size: 2.3em;
+  display: contents;
+}
+
+.about p{
+  line-height: 1.6em;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.about img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.cert-logos img {
+  height: 60px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
