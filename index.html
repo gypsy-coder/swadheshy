@@ -7,7 +7,7 @@
     <meta name="description"
         content="Swadheshy Polymers is a leading manufacturer of HDPE, HD JOINTS, and LDPE pipes, trusted by contractors and industries across India.">
     <meta name="keywords"
-        content="HDPE pipes, PVC pipes, LDPE pipes, irrigation pipes, Water supply pipes, pipe manufacturers Kerala, pipe manufacturers Idukki, pipe manufacturers Kochi, Swadheshy Polymers">
+        content="HDPE, HDPE pipes, PVC pipes, LDPE pipes, irrigation pipes, Water supply pipes, pipe manufacturers Kerala, pipe manufacturers Idukki, pipe manufacturers Kochi, Swadheshy Polymers">
     <meta name="author" content="Swadheshy Polymers">
     <meta name="robots" content="index, follow">
 
@@ -64,24 +64,24 @@
                 <img src="images/hdpe.png" alt="HDPE Pipes">
                 <h3>HDPE Pipes</h3>
                 <p>Reliable and durable for industrial and agricultural needs.</p>
-                <a href="#">View Details</a>
+                <button class="view-details-btn" data-product="hdpe">View Details</button>
             </div>
             <div class="product-card">
                 <img src="images/agri.png" alt="PVC Pipes">
                 <h3>LDPE Pipes</h3>
                 <p>Engineered for strength and chemical resistance.</p>
-                <a href="#">View Details</a>
+                <button class="view-details-btn" data-product="ldpe">View Details</button>
             </div>
             <div class="product-card">
                 <img src="images/sprinkler.png" alt="Agri Pipes">
                 <h3>Agri Pipes</h3>
                 <p>Designed for robust agricultural use and easy installation.</p>
-                <a href="#">View Details</a>
+                <button class="view-details-btn" data-product="agri">View Details</button>
             </div>
             <div class="product-card">
                 <img src="images/pvc.png" alt="Sprinkler Systems">
                 <h3>HD Pipe Joints</h3>
-                <p>Automated solutions for even water distribution.</p>
+                <p>Designed for reliable, leak-proof, and long-lasting connections in HDPE piping systems.</p>
                 <a href="#">View Details</a>
             </div>
         </div>
@@ -103,22 +103,35 @@
         </div>
     </section>
 
-    <section class="certification fade-in">
+    <section class="clientele-section">
         <h2>Our Clientele</h2>
-        <p>Trusted by leading names in agriculture, infrastructure, and irrigation.</p>
-        <div class="client-logos">
-            <ul class="client-list">
-                <li>Kannan Devan Hill Plantation, Munnar</li>
-                <li>BSNL</li>
-                <li>BPCL</li>
-                <li>HOC</li>
-                <li>TCC</li>
-                <li>KSEB</li>
-                <li>Other Major Contractors</li>
-            </ul>
-
+        <div class="client-slider">
+            <div class="client-track">
+                <img src="images/kc.png" alt="K Chittilappilly foundation">
+                <img src="images/kseb.png" alt="KSEB">
+                <img src="images/bsnl.png" alt="BSNL">
+                <img src="images/bpcl.png" alt="BPCL">
+                <img src="images/tata.png" alt="TATA Kannan Devan">
+                <img src="images/avt.png" alt="AVT">
+                <!-- Repeat logos to simulate infinite loop -->
+                <img src="images/kc.png" alt="K Chittilappilly foundation">
+                <img src="images/kseb.png" alt="KSEB">
+                <img src="images/bsnl.png" alt="BSNL">
+                <img src="images/bpcl.png" alt="BPCL">
+                <img src="images/tata.png" alt="TATA Kannan Devan">
+                <img src="images/avt.png" alt="AVT">
+            </div>
         </div>
     </section>
+
+    <!-- Popup Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Product Title</h2>
+            <div id="modal-description">Product details go here...</div>
+        </div>
+    </div>
 
     <footer class="contact-footer" id="contact">
         <h2>Contact Us</h2>
