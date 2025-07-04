@@ -1,11 +1,42 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: "Segoe UI", sans-serif;
     background: #f8f9fa;
     /*color: #333;*/
     color: rgb(27 50 87);
     width: 100%;
     height: auto;
+    overflow-y: scroll;
+}
+
+.content {
+    max-width: 92%;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(48, 42, 42);
+    /* dark pipe track */
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: linear-gradient(to right,
+            #000 0%,
+            #000 30%,
+            #00aaff 50%,
+            #000 70%,
+            #000 100%);
 }
 
 header.banner {
@@ -27,7 +58,7 @@ header .overlay {
     width: 68%;
 }
 
-header .logo {
+.logo {
     background: url("images/logo.png") center/cover no-repeat;
     width: 16vh;
     height: 16vh;
@@ -35,8 +66,8 @@ header .logo {
     padding: 2px;
     display: block;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 30px;
+    right: 30px;
 }
 
 header .overlay h1 {
@@ -142,13 +173,13 @@ header .overlay p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(30, 30, 30, 0.8);
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 1000;
 }
 
 /* Modal Content */
@@ -157,9 +188,12 @@ header .overlay p {
     padding: 2rem;
     border-radius: 10px;
     max-width: 500px;
+    max-height: 75vh;
+    overflow-y: auto;
     width: 90%;
     position: relative;
     text-align: left;
+    animation: fadeIn 0.4s ease-out;
 }
 
 .close-modal {
@@ -370,6 +404,8 @@ header .overlay p {
     object-fit: contain;
 }
 
+
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -377,5 +413,17 @@ header .overlay p {
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
