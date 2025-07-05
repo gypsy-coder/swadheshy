@@ -14,7 +14,7 @@ body {
     max-width: 92%;
     margin: 0px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
@@ -113,9 +113,10 @@ header .overlay p {
     display: contents;
 }
 
+.certification p,
 .about p {
     line-height: 1.6em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -131,6 +132,7 @@ header .overlay p {
 }
 
 .products h2,
+.certification h2,
 .clientele-section h2 {
     font-size: 1.75em;
 }
@@ -232,7 +234,6 @@ header .overlay p {
     justify-content: start;
     gap: 5rem;
     margin-top: 2rem;
-    margin-left: 2rem;
 }
 
 .cert-logos img {
