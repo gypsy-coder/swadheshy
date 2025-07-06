@@ -56,7 +56,7 @@ const productDetails = {
                         <li>Plantation and Drip Irrigation Systems</li>
                         <li>Industrial Use for Corrosive Fluids and Chemicals</li>
                     </ul>
-                     <img src="images/HD.png" alt="HDPE Pipe">`
+                     <img src="images/HD.webp" alt="HDPE Pipe">`
 
     },
     ldpe: {
