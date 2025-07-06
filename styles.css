@@ -40,7 +40,7 @@ body {
 }
 
 header.banner {
-    background: url("images/banner.png") center/cover no-repeat;
+    background: url("images/banner.webp") center/cover no-repeat;
     height: auto;
     min-height: 100vh;
     width: 100%;
@@ -59,7 +59,7 @@ header .overlay {
 }
 
 .logo {
-    background: url("images/logo.png") center/cover no-repeat;
+    background: url("images/logo.webp") center/cover no-repeat;
     width: 16vh;
     height: 16vh;
     opacity: 1;
@@ -234,6 +234,7 @@ header .overlay p {
     justify-content: start;
     gap: 5rem;
     margin-top: 2rem;
+    overflow-x: auto;
 }
 
 .cert-logos img {
@@ -404,8 +405,6 @@ header .overlay p {
     margin: 10px;
     object-fit: contain;
 }
-
-
 
 @keyframes scroll {
     0% {
