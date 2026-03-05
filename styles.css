@@ -406,6 +406,21 @@ header .overlay p {
     object-fit: contain;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
